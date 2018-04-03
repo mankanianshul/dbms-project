@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/product_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textSize="35dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pomeranian"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/color"
+        android:text="Red,for Pc"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingTop="1dp"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs 689"
+        android:textSize="20dp"
+        android:paddingLeft="40dp"/>
+    <TextView
+        android:id="@+id/stock_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remaning:"
+        android:textSize="20dp"
+        android:paddingLeft="40dp"/>
+</LinearLayout>

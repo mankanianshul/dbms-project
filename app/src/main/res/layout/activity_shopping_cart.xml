@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shopping_cart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.bhak.ShoppingCart">
+
+
+    <ListView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/tot_price"
+        android:layout_below="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price:-"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/final_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs 650"
+            android:paddingLeft="100dp"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/place_order"
+        android:layout_below="@+id/tot_price"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Place Order"
+        android:onClick="placeorder"/>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_product4_editor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.example.user.bhak.Product4Editor">
+
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:text="Product"
+            style="@style/CategoryStyle"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_product_description"
+                android:hint="Description"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <EditText
+                android:id="@+id/edit_product_color"
+                android:hint="Color,Size/Category"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Price"
+            android:textSize="20dp"
+            style="@style/CategoryStyle" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingTop="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs"
+                android:textSize="22dp"/>
+
+            <EditText
+                android:id="@+id/edit_product_price"
+                android:hint="Enter Amount"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="In Stock"
+            android:textSize="20dp"
+            style="@style/CategoryStyle" />
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+
+            <EditText
+                android:id="@+id/edit_product_stock"
+                android:hint="Number left"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

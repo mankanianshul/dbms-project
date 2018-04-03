@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.bhak">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/shop"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Product1EditorActivity" />
+        <activity
+            android:name=".Product1Catalog"
+            android:label="@string/title_activity_product1_catalog"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Product1Delete" />
+        <activity android:name=".ShoppingCart" />
+        <activity android:name=".ProductList" />
+        <activity android:name=".Product2Delete" />
+        <activity
+            android:name=".Product2Catalog"
+            android:label="@string/title_activity_product2_catalog"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Product2Editor" />
+        <activity
+            android:name=".Product3Catalog"
+            android:label="@string/title_activity_product3_catalog"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Product3Editor" />
+        <activity android:name=".Product3Delete" />
+        <activity
+            android:name=".Product4Catalog"
+            android:label="@string/title_activity_product4_catalog"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Product4Editor" />
+        <activity android:name=".Product4Delete" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".ShoppingCartDelete" />
+    </application>
+
+</manifest>
